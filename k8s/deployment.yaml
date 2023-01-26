@@ -79,3 +79,4 @@ spec:
       targetPort: 8080
       nodePort: 30000
   type: NodePort
+  # expose app using kubectl port-forward services/web 8080:80 -n default
