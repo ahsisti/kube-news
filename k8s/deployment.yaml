@@ -77,6 +77,6 @@ spec:
   ports:
     - port: 80
       targetPort: 8080
-      nodePort: 30000
-  type: NodePort
-  # expose app using kubectl port-forward services/web 8080:80 -n default
+      #nodePort: 30000 - used when you have NodePort enabled
+  type: LoadBalancer
+  #type: NodePort - used when you want to expose app using kubectl port-forward services/web 8080:80 -n default
